@@ -1,0 +1,67 @@
+:root {
+  --bg: #eef1f5;
+  --surface: #ffffff;
+  --panel: #f7f8fb;
+  --canvas: #fbfcfe;
+  --ink: #182235;
+  --ink-soft: #586579;
+  --muted: #667386;
+  --line: #d8e0ea;
+  --line-soft: #e8edf3;
+  --node-line: #cfd8e6;
+  --connector: #c7d1df;
+  --accent: #0f766e;
+  --accent-line: #4aa39c;
+  --accent-faint: #edf8f7;
+  --accent-ring: rgba(15, 118, 110, 0.15);
+  --success: #4d7c0f;
+  --success-line: #84a83c;
+  --success-soft: #e5f6ef;
+  --danger: #a43b35;
+  --danger-line: #e7b6b2;
+  --danger-soft: #fff0ef;
+  --radius-lg: 22px;
+  --radius-md: 16px;
+  --shadow-soft: 0 18px 42px rgba(24, 34, 53, 0.075);
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 12% 0%, rgba(15, 118, 110, 0.1), transparent 30rem),
+    linear-gradient(180deg, #f7faf9 0%, var(--bg) 42rem);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+button,
+a,
+input {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:focus-visible,
+input:focus-visible {
+  outline: 3px solid rgba(15, 118, 110, 0.24);
+  outline-offset: 2px;
+}
+
+::selection {
+  background: var(--accent);
+  color: white;
+}
